@@ -12,19 +12,18 @@ public class Main {
         carro2.ano = 2020;
 
         System.out.println("=== Carro 1 ===");
-        System.out.println("Marca: " + carro1.marca);
-        System.out.println("Modelo: " + carro1.modelo);
-        System.out.println("Ano: " + carro1.ano);
+        carro1.exibir();
+        int idade1 = carro1.idadeDoCarro();
+        System.out.println("Idade do carro: " + idade1 + " anos");
+
 
 
         System.out.println();
 
 
         System.out.println("=== Carro 2 ===");
-        System.out.println("Marca: " + carro2.marca);
-        System.out.println("Modelo: " + carro2.modelo);
-        System.out.println("Ano: " + carro2.ano);
-
+        carro1.exibir();
+        System.out.println("Idade do carro: " + carro2.idadeDoCarro() + " anos");
     }
 
 }
