@@ -1,5 +1,9 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
+
+        ArrayList<Carro> carros = new ArrayList<>();
 
         Carro carro1 = new Carro();
         carro1.marca = "Toyota";
@@ -11,19 +15,20 @@ public class Main {
         carro2.modelo = "Civic";
         carro2.ano = 2020;
 
-        System.out.println("=== Carro 1 ===");
-        carro1.exibir();
-        int idade1 = carro1.idadeDoCarro();
-        System.out.println("Idade do carro: " + idade1 + " anos");
+        Carro carro3 = new Carro();
+        carro3.marca = "Ford";
+        carro3.modelo = "Ka";
+        carro3.ano = 2017;
 
+        carros.add(carro1);
+        carros.add(carro2);
+        carros.add(carro3);
 
-
-        System.out.println();
-
-
-        System.out.println("=== Carro 2 ===");
-        carro1.exibir();
-        System.out.println("Idade do carro: " + carro2.idadeDoCarro() + " anos");
+        for (Carro carro : carros) {
+            System.out.println("=== Carro ===");
+            carro.exibir();
+            System.out.println("Idade: " + carro.idadeDoCarro() + " anos");
+            System.out.println();
+        }
     }
-
 }
