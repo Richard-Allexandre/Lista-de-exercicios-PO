@@ -3,8 +3,6 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Carro> carros = new ArrayList<>();
-
         Carro carro1 = new Carro();
         carro1.marca = "Toyota";
         carro1.modelo = "Corolla";
@@ -20,6 +18,12 @@ public class Main {
         carro3.modelo = "Ka";
         carro3.ano = 2017;
 
+        System.out.println("=== Teste de validação ===");
+        carro1.setAno(1500);
+        carro1.setAno(3000);
+        System.out.println();
+
+        ArrayList<Carro> carros = new ArrayList<>();
         carros.add(carro1);
         carros.add(carro2);
         carros.add(carro3);
