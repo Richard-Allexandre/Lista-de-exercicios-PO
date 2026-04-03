@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("===== Exercício 6 =====");
 
-        Carro carro1 = new Carro "Toyota", "Corolla", 2020);
+        Carro carro1 = new Carro();
 
         Carro carro2 = new Carro();
 
@@ -12,9 +10,5 @@ public class Main {
         carro1.exibir();
         System.out.println("--- Sem parâmetros ---");
         carro2.exibir();
-        System.out.println();
-
-
-        }
     }
 }

@@ -3,7 +3,7 @@ public class Carro {
     private String modelo;
     private int ano;
 
-    public Carro(String marca, String modelo, int ano) {
+    public Carro() {
         this.marca = marca;
         this.modelo = modelo;
         setAno(ano);
