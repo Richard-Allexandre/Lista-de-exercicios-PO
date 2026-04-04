@@ -1,4 +1,4 @@
-package estacionamento;
+package br.com.Richard.estacionamento;
 
 public class VagaCarro {
     private String placa;

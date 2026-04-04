@@ -1,4 +1,4 @@
-package estacionamento;
+package br.com.Richard.estacionamento;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class Main {
                     " | Vagas livres: " + Estacionamento.vagasLivres());
             System.out.println("1) Registrar entrada");
             System.out.println("2) Registrar saída");
-            System.out.println("3) Ver carros no estacionamento");
+            System.out.println("3) Ver carros no br.com.Richard.estacionamento");
             System.out.println("4) Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();

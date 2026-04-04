@@ -1,4 +1,4 @@
-package estacionamento;
+package br.com.Richard.estacionamento;
 
 import java.util.ArrayList;
 
@@ -23,17 +23,17 @@ public class Estacionamento {
         for (VagaCarro v : vagas) {
             if (v.getPlaca().equalsIgnoreCase(placa)) {
                 vagas.remove(v);
-                System.out.println("Carro de placa " + placa + " saiu do estacionamento.");
+                System.out.println("Carro de placa " + placa + " saiu do br.com.Richard.estacionamento.");
                 return true;
             }
         }
-        System.out.println("Placa não encontrada no estacionamento.");
+        System.out.println("Placa não encontrada no br.com.Richard.estacionamento.");
         return false;
     }
 
     public static void listar() {
         if (vagas.isEmpty()) {
-            System.out.println("Nenhum carro no estacionamento.");
+            System.out.println("Nenhum carro no br.com.Richard.estacionamento.");
         } else {
             System.out.println("\n===== CARROS NO ESTACIONAMENTO =====");
             for (int i = 0; i < vagas.size(); i++) {
