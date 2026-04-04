@@ -1,25 +1,21 @@
 public class Carro {
 
+    public static int totalCarros;
     private String marca;
     private String modelo;
     private int ano;
 
-    /*
-     * Exercício 5 – Construtor parametrizado
-     * Vantagem de usar construtor em vez de setters um por um:
-     * - O objeto já nasce com todos os dados em UMA linha
-     * - Evita esquecer de setar algum atributo
-     * - O código fica mais limpo e legível
-     */
     public Carro(String marca, String modelo, int ano) {
         this.marca = marca;
         this.modelo = modelo;
         setAno(ano);
+        totalCarros++;
     }
     public Carro() {
         this.marca = "Desconhecido";
         this.modelo = "Desconhecido";
         this.ano = 0;
+        totalCarros++;
     }
 
     public String getMarca()  { return marca; }

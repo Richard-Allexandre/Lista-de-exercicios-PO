@@ -1,14 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("===== Exercício 6 =====");
-
         Carro carro1 = new Carro("Toyota", "Corolla", 2020);
+        Carro carro2 = new Carro("Honda", "Civic", 2022);
+        Carro carro3 = new Carro("Ford", "Ka", 2018);
+        Carro carro4 = new Carro("Chevrolet", "Onix", 2021);
+        Carro carro5 = new Carro();
 
-        Carro carro2 = new Carro();
-
-        System.out.println("--- Com parâmetros ---");
-        carro1.exibir();
-        System.out.println("--- Sem parâmetros ---");
-        carro2.exibir();
+        System.out.println("Total de carros criados: " + Carro.totalCarros);
     }
 }
