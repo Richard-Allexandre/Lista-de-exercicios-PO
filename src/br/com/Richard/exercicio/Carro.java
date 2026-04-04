@@ -1,3 +1,5 @@
+package br.com.Richard.exercicio;
+
 public class Carro {
 
     public static final int ANO_PRIMEIRO_CARRO = 1886;

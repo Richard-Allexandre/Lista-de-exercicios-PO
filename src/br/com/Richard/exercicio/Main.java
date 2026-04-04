@@ -1,3 +1,5 @@
+package br.com.Richard.exercicio;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,7 +13,7 @@ public class Main {
 
         do {
             System.out.println("\n===== MENU =====");
-            System.out.println("1) Cadastrar Carro");
+            System.out.println("1) Cadastrar br.com.Richard.exercicio.Carro");
             System.out.println("2) Listar todos");
             System.out.println("3) Total cadastrado");
             System.out.println("4) Sair");
@@ -44,7 +46,7 @@ public class Main {
 
                     Carro novoCarro = new Carro(marca, modelo, ano);
                     carros.add(novoCarro);
-                    System.out.println("Carro cadastrado com sucesso!");
+                    System.out.println("br.com.Richard.exercicio.Carro cadastrado com sucesso!");
                     break;
 
                 case 2:
@@ -61,7 +63,7 @@ public class Main {
                     break;
 
                 case 3:
-                    // d) usando Carro.totalCarros (static)
+                    // d) usando br.com.Richard.exercicio.Carro.totalCarros (static)
                     Carro.imprimirTotal();
                     break;
 

@@ -1,3 +1,5 @@
+package br.com.Richard.exercicio;
+
 public class Cliente {
 
     private String nome;
