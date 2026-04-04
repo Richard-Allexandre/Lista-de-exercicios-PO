@@ -40,5 +40,8 @@ public class Carro {
     public int idadeDoCarro() {
         return 2026 - getAno();
     }
+    public static void imprimirTotal() {
+        System.out.println("Total de carros criados: " + totalCarros);
+    }
 }
 

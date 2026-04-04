@@ -6,6 +6,6 @@ public class Main {
         Carro carro4 = new Carro("Chevrolet", "Onix", 2021);
         Carro carro5 = new Carro();
 
-        System.out.println("Total de carros criados: " + Carro.totalCarros);
+        Carro.imprimirTotal();
     }
 }
