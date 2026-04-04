@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("===== Exercício 6 =====");
 
-        Carro carro1 = new Carro();
+        Carro carro1 = new Carro("Toyota", "Corolla", 2020);
 
         Carro carro2 = new Carro();
 
