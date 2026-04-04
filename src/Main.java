@@ -1,20 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        Carro meuCarro = new Carro("VW", "Gol", 2015);
-        trocarModelo(meuCarro);
-        System.out.println(meuCarro.getModelo());
+        // Construtor 1: nome, email e telefone
+        Cliente cliente1 = new Cliente("Richard", "richard@email.com", "47999999999");
 
-         // Exercício 13a – o que é impresso?
-        // Fusca
-        // Exercício 13b – por que a mudança dentro do método afetou o objeto original?
-        // Quando passamos um objeto para um método, passamos a REFERÊNCIA (endereço).
-        // parâmetro c aponta para o MESMO objeto no heap que meuCarro aponta.
-        // Então quando c.setModelo("Fusca") é chamado dentro do método,
-        //  ele está alterando o mesmo objeto que meuCarro enxerga fora do método.
+        // Construtor 2: nome e email
+        Cliente cliente2 = new Cliente("Ana", "ana@email.com");
+
+        // Construtor 3: só nome
+        Cliente cliente3 = new Cliente("Carlos");
+
+        System.out.println("--- Cliente 1 ---");
+        cliente1.exibir();
+
+        System.out.println("--- Cliente 2 ---");
+        cliente2.exibir();
+
+        System.out.println("--- Cliente 3 ---");
+        cliente3.exibir();
+
+        System.out.println("Total de clientes: " + Cliente.totalClientes);
     }
-
-    public static void trocarModelo(Carro c) {
-        c.setModelo("Fusca");
-    }
-
 }
