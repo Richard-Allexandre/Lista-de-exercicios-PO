@@ -1,6 +1,8 @@
 public class Carro {
 
-    public static int totalCarros;
+    public static final int ANO_PRIMEIRO_CARRO = 1886;
+
+    public static int totalCarros = 0;
     private String marca;
     private String modelo;
     private int ano;
